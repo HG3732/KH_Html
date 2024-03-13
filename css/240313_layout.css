@@ -14,21 +14,32 @@
 }
 
 .wrap-footer > footer{
+    clear: both;
+
     width: 960px;
     margin: 0 auto;
+
 }
 
 /* main */
 
 .wrap-main {
     background-color: #ffd;
-    width: 960px;
-    margin: 0 auto;
+    width: 960px; margin: 0 auto;
+
+    /* float - 부모의 height계산을 위해 */
+    overflow: hidden;
+
+    /* margin: 10px 0; */
+
+    padding: 10px 0;
 }
 
 .wrap-main > section {
     width: 750px;
     float: left;
+
+    margin-right: 10px;
 }
 .wrap-main > aside {
     width: 200px;

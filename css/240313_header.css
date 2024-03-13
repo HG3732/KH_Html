@@ -1,0 +1,47 @@
+nav > ul {
+    /* float의 부모노드에 overflow hidden */
+    overflow: hidden;
+}
+nav > ul > li{
+    /* float width 제외 - 고정크기 X content에 따라 크기 바뀌게*/
+    float: left;
+}
+header nav
+, header div.logo {
+    clear: both;
+}
+
+header {
+    /* 자식들의 기준점 */
+    position: relative;
+    height: 150px;
+}
+header .tnb{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+header .bnb{
+    position: absolute; right: 0; bottom: 0;
+}
+header div.logo {
+    position: absolute; top: 40px; left: 40px;
+}
+
+/* li-a 링크 padding, background, border */
+header a{
+    display: inline-block;
+    border: 1px solid black;
+}
+header li:first-child > a{
+    border-radius: 10px 0 0 10px;
+}
+header li:last-child > a{
+    border-radius: 0 10px 10px 0;
+}
+header .tnb a{
+    padding: 5px;
+}
+header .bnb a{
+    padding: 10px;
+}
