@@ -14,6 +14,7 @@ header{
 header nav.tnb{
     position: absolute;
     right: 0;
+    top: 0;
 }
 header nav.bnb{
     position: absolute;
@@ -69,7 +70,6 @@ article > h1 {
 article > p {
     font-style:nomal;
     line-height: 1.3em;
-
 }
 h1{
     font-weight: 900;
@@ -82,7 +82,7 @@ h2{
 nav > ul{
     overflow: hidden;
 }
-ul > li {
+nav > ul > li {
     float: left;
 }
 nav > ul > li{
@@ -151,12 +151,32 @@ div.tab-item > ul > li {
     overflow: hidden;
 }
 
-input[type=radio] {
+aside input[type=radio] {
     /* 공간 차지 없는 요소 */
     display: none;
 
     /* 공간 차지하지만 화면에는 보이지 않음 */
     /* visibility: hidden; */
+}
+input[type=radio]:nth-of-type(1):checked
+~ div:nth-of-type(1)
+{
+    display: block;
+}
+input[type=radio]:nth-of-type(1):checked
+~ div:nth-of-type(2)
+{
+    display: none;
+}
+input[type=radio]:nth-of-type(2):checked
+~ div:nth-of-type(1)
+{
+    display: none;
+}
+input[type=radio]:nth-of-type(2):checked
+~ div:nth-of-type(2)
+{
+    display: block;
 }
 
 aside > label{
@@ -175,26 +195,7 @@ aside > label:nth-of-type(2){
     border-width: 0 0 1px 0;
 }
 
-input[type=radio]:nth-of-type(1):checked
-~ div:nth-of-type(1)
-{
-    display: block;
-}
-input[type=radio]:nth-of-type(1):checked
-~ div:nth-of-type(2)
-{
-    display: none;
-}
-input[type=radio]:nth-of-type(2):checked
-~ div:nth-of-type(1)
-{
-    display: none;
-}
-input[type=radio]:nth-of-type(2):checked
-~ div:nth-of-type(2)
-{
-    display: block;
-}
+
 .tab-item > ul > li:nth-child(2n+1){
     background-color: #eee;
 }
@@ -203,4 +204,18 @@ input[type=radio]:nth-of-type(2):checked
 }
 .wrap-main > aside > label:hover {
     background-color: yellow;
+}
+
+/* 라디오 버튼 활성화에 따른 상태 변경 */
+input[type=radio]:nth-of-type(1):checked
+~ label:nth-of-type(1)
+{
+    background-color: black;
+    color: white;
+}
+input[type=radio]:nth-of-type(2):checked
+~ label:nth-of-type(2)
+{
+    background-color: black;
+    color: white;
 }
