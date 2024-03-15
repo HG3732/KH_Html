@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n1 = prompt("첫번째 수 입력")
+        var n2 = prompt("두번째 수 입력")
+        
+        num1 = parseInt(n1);
+        num2 = parseInt(n2);
+
+        function sumMulti(x, y) {
+            if(x > y){ alert(x + "(이)가 " + y + "보다 큽니다.");}
+            else if(x == y){ alert("두 수가 같습니다.");}
+            else if(x < y){ alert(x + "(이)가 " + y + "보다 작습니다.");}
+            else {alert("제대로 입력하세요")}
+        }
+        console.log(sumMulti(num1, num2));
+    </script>
+
+</body>
+</html>
