@@ -1,0 +1,50 @@
+.section1 {
+    position: relative;
+}
+
+/* 배경 설정 */
+div.bg{
+    position: absolute;
+    background-image: url("/bgmovie.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 880px;
+    z-index: -1;
+}
+.section1{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bg {
+    width: 100%;
+    min-width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.contents-area {
+    width: 1100px;
+    margin: 0 auto;
+}
+.boxoffice{
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.boxoffice > p {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    color: #fff;
+    padding: 0 0 5px 0;
+    margin: 0 18px;
+}
+.section1_inner > div.moremovie{
+    float: right;
+}
+.section1_inner > div.moremovie > a {
+    text-decoration: none;
+    color: #666;
+}
