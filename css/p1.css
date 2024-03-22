@@ -1,0 +1,49 @@
+textarea {
+    resize: none;
+}
+
+table.form td:first-child {
+    text-align: center;
+    font-weight: bold;
+}
+
+table.form tr td:nth-child(2){
+    width: 280px;
+}
+
+table.form tr:first-child td:nth-child(2) > input{
+    width: 278px;
+}
+
+table.form td:nth-child(2) > *{
+    width: 280px;    
+}
+
+table.form button{
+    margin: 0 auto;
+}
+
+hr {
+    margin: 25px 0;
+}
+
+.board {
+    width: 100%;
+}
+
+.board thead, tfoot{
+    background-color: lightsalmon;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.board thead > tr > td{
+    padding: 5px 0;
+}
+.board tfoot > tr > td{
+    padding: 5px 0;
+}
+
+.board tbody{
+    background-color: beige;
+}
